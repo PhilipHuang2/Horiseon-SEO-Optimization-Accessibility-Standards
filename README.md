@@ -12,6 +12,82 @@ Through this project, I have learn the meaning and proper usage of semantic elem
 
 I hope that this documents will be easier to read through my work and the CSS has become easier to manage.
 
+## Example
+
+Below is segment of the CSS from the home page.  This code is styling 3 articles about the benefits of working with Horiseon.  Each article uses a different class can contains different styles for each sub element.  However this is a waste as each class is styled exactly the same.
+``` CSS
+.benefit-lead {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-lead h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+.benefit-cost img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+```
+
+Instead, I have chosen to merge all three benefits classes into one class benefit-article.  
+``` CSS
+.benefit-article {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+
+.benefit-article h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefit-article img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+
+```
+
+This change improves the code in two ways.  First of all, we have reduced the code by two thirds which makes the code concise and more readable.  In addition, this change eases future development as changes or additions to the benefits section can be standardized under one class.
+
+
 
 # Installation
 Just clone the repository on your machine and drag and drop the index.html file to your browser and you can see Horiseon's home page.
