@@ -130,6 +130,7 @@ footer {
     text-align: center;
 }
 /* consider making h2 into h3, and h2 to 36px and h3 to 36px  */
+/* Removed h2 and made into footer-header because does not provide context for website */
 #footer-header{
     font-size: 20px;
 }
